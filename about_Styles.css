@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team_member:hover{
+        transform: scale(1.075);
+        transition: 0.2s ease-in;
+        cursor: pointer;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #fff 100%), 
+    url('/images/undraw_team_collaboration_re_ow29.svg');
+    text-align:center;
+    font-family: 'Josefin Sans', sans-serif;;
+    background-size: cover;
+
+}
+
+.wrapper{
+    margin-top: 10%;
+}
+
+.wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member{
+    background: #fff;
+    margin: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.team .team_member h3{
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team_member p.role{
+    color:#ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+/* .team .team_member .team_img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+} */
+
+.team .team_member .team_img{
+    filter:grayscale(100%);
+}
+
+.team .team_member .team_img:hover{
+    filter: grayscale(0%);
+}
